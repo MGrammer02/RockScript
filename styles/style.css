@@ -309,21 +309,21 @@ main::after {
 }
 .map-info {
     z-index: 10;
-    width: 50vw;
-    font-size: 1.4rem;
-    padding: 0 2rem;
+    max-width: 50vw;
+    font-size: 1.7rem;
+    padding: 0 3rem;
 }
 .map-image {
     z-index: 20;
+    height: calc(100% - 5rem);
 }
 .map-image h3 {
     font-size: 2rem;
+    margin-top: 0;
     text-transform: uppercase;
 }
 .map-image img {
-    height: 40rem;
-    min-width: 40rem;
-    max-width: 60vw;
+    height: inherit;
     border-radius: 1rem;
 }
 .section-map {
@@ -343,7 +343,14 @@ main::after {
     background-color: rgba(0, 0, 0, 0.326);
     position: absolute;
 }
+.section-map div {
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    overflow: hidden;
+}
 .section-map iframe {
     height: calc(100% - 7rem);
-    border-radius: 1.5rem;
+    padding: 0 2rem;
 }
