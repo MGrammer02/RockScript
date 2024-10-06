@@ -61,7 +61,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-    height: 100vh;
+    min-height: 100vh;
     gap: 13rem;
     padding: 0 20rem;
     color: #fff;
@@ -134,9 +134,7 @@ main::after {
     transition: background-color .3s;
     cursor: pointer;
 }
-.main_right nav button:hover {
-    background-color: rgba(4, 131, 8, 0.699);
-}
+
 .main-right-desc {
     line-height: 1.5;
     letter-spacing: .2rem;
@@ -196,10 +194,6 @@ main::after {
         width: 20rem;
         height: 20rem;
     }
-    .main_right nav button {
-        width: 12rem;
-        padding: 1rem 4rem;
-    }
     .main_right p {
         font-size: 1rem;
         margin-bottom: 3rem;
@@ -209,8 +203,8 @@ main::after {
     background-image: url(../media/background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2rem 20rem;
-    height: 100vh;
+    padding: 5rem 6rem;
+    min-height: 100vh;
     scroll-snap-align: start;
     color: #fff;
     position: relative;
@@ -234,11 +228,13 @@ main::after {
 }
 .objt_content p {
     font-size: 1.6rem;
+    min-width: 32rem;
     max-width: 65rem;
 }
 .objt_forests {
-    gap: 6rem;
+    gap: 5rem;
     z-index: 20;
+    flex-wrap: wrap;
 }
 .objt-forest p {
     font-size: 1.4rem;
