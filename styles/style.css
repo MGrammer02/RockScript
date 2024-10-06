@@ -137,3 +137,82 @@ main::after {
     line-height: 1.5;
     letter-spacing: .2rem;
 }
+
+/* --- Media Queries for Responsive Design --- */
+
+@media (max-width: 1200px) {
+    main {
+        padding: 0 15rem;
+        gap: 10rem;
+    }
+
+    .main_left img {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .main_left-img-container {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .main_right nav button {
+        width: 15rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0 8rem;
+        gap: 5rem;
+    }
+
+    .main_left img {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .main_left-img-container {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .main_right nav button {
+        width: 13rem;
+        padding: 1.2rem 5rem;
+    }
+
+    .main_right p {
+        font-size: 1.1rem;
+        margin-bottom: 4.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        flex-direction: column;
+        padding: 0 3rem;
+        gap: 3rem;
+        height: auto;
+    }
+
+    .main_left img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .main_left-img-container {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .main_right nav button {
+        width: 12rem;
+        padding: 1rem 4rem;
+    }
+
+    .main_right p {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+}
