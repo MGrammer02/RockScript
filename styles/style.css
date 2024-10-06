@@ -4,12 +4,16 @@
 }
 html {
     font-size: 62.5%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+body {
+    
 }
 *, *:before, *:after {
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
-
 .f {
     display: flex;
 }
@@ -58,10 +62,11 @@ main {
     background-size: cover;
     background-position: 50%;
     height: 100vh;
-    gap: 14rem;
+    gap: 13rem;
     padding: 0 20rem;
     color: #fff;
     position: relative;
+    scroll-snap-align: start;
 }
 main::after {
     content: "";
@@ -80,8 +85,8 @@ main::after {
     z-index: 15;
 }
 .main_left img {
-    width: 37rem;
-    height: 37rem;
+    width: 38rem;
+    height: 38rem;
     border-radius: 50%;
     object-fit: cover;
     object-position: 50%;
@@ -90,8 +95,8 @@ main::after {
     cursor: cell;
 }
 .main_left-img-container {
-    width: 36rem;
-    height: 36rem;
+    width: 38rem;
+    height: 38rem;
     border-radius: 50%;
     border: solid .3rem rgb(191, 191, 191);
     position: relative;
@@ -101,7 +106,7 @@ main::after {
     transform: scale(1.4);
 }
 .main_right img {
-    height: 7rem;
+    height: 9rem;
     padding-bottom: 2.5rem;
 }
 .main_right p {
@@ -111,7 +116,6 @@ main::after {
     padding: 0;
     margin-top: -.3rem;
     letter-spacing: .2rem;
-    margin-bottom: 6.5rem;
 }
 .main_right nav {
     gap: 2rem;
@@ -136,4 +140,59 @@ main::after {
 .main-right-desc {
     line-height: 1.5;
     letter-spacing: .2rem;
+}
+.section-objt {
+    background-image: url(../media/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 20rem;
+    height: 100vh;
+    scroll-snap-align: start;
+    color: #fff;
+    position: relative;
+    gap: 5rem;
+}
+.section-objt::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top:0;right: 0;left: 0;bottom: 0;
+    background-color: rgba(0, 0, 0, 0.326);
+    position: absolute;
+}
+.objt_content {
+    z-index: 10;
+}
+.objt_content h2 {
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.objt_content p {
+    font-size: 1.6rem;
+    max-width: 65rem;
+}
+.objt_forests {
+    gap: 6rem;
+    z-index: 20;
+}
+.objt-forest p {
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+.objt-forest-img-container {
+    overflow: hidden;
+    width: 19rem;
+    height: 15.5rem;
+    border-radius: .5rem;
+}
+.objt-forest img {
+    width: 100%;
+    height: 100%;
+    object-position: cover;
+    transition: transform .3s ease;
+    cursor: cell;
+}
+.objt-forest img:hover {
+    transform: scale(1.2);
 }
