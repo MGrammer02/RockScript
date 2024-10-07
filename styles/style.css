@@ -361,6 +361,9 @@ main::after {
     flex-wrap: wrap;
     z-index: 20;
 }
+.recom-info ol {
+    width: 50vw;
+}
 .recom-info img {
     width: 35rem;
     height: 35rem;
