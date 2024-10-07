@@ -391,6 +391,11 @@ main::after {
     background-color: rgba(0, 0, 0, 0.326);
     position: absolute;
 }
+@media (max-width: 576px) {
+    .section-map-info {
+        flex-wrap: wrap-reverse;
+    }
+}
 .map-info {
     z-index: 10;
     min-width: 38rem;
@@ -439,8 +444,8 @@ main::after {
     overflow: hidden;
 }
 .section-map iframe {
-    height: calc(100% - 7rem);
-    padding: 0 2rem;
+    min-height: 100vh;
+    padding: 0 1rem;
 }
 footer {
     scroll-snap-align: start;
