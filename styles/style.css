@@ -375,8 +375,9 @@ main::after {
     background-repeat: no-repeat;
     background-size: cover;
     scroll-snap-align: start;
-    min-height: 100vh;
+    MIN-height: 100vh;
     padding: 0 3rem;
+    padding-bottom: 1rem;
     padding-top: 7rem;
     position: relative;
     color: #fff;
@@ -392,21 +393,24 @@ main::after {
 }
 .map-info {
     z-index: 10;
+    min-width: 38rem;
     max-width: 50vw;
     font-size: 1.7rem;
     padding: 0 3rem;
 }
+
 .map-image {
     z-index: 20;
     height: calc(100% - 5rem);
 }
+
 .map-image h3 {
     font-size: 2rem;
     margin-top: 0;
     text-transform: uppercase;
 }
 .map-image img {
-    height: inherit;
+    height: calc(100vh - 13rem);
     border-radius: 1rem;
 }
 .section-map {
@@ -417,6 +421,7 @@ main::after {
     height: 100vh;
     padding-top: 7rem;
     position: relative;
+    padding-bottom: 1rem;
 }
 .section-map::before {
     content: "";
