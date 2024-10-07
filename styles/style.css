@@ -450,8 +450,10 @@ main::after {
 footer {
     scroll-snap-align: start;
     background-color: rgb(18, 18, 18);
-    height: 18rem;
+    min-height: 18rem;
+    flex-wrap: wrap;
+    padding: 2rem 3rem;
 }
 footer img {
-    height: 9rem;
+    height: 5.5rem;
 }
