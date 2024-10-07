@@ -375,11 +375,12 @@ main::after {
     background-repeat: no-repeat;
     background-size: cover;
     scroll-snap-align: start;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 3rem;
     padding-top: 7rem;
     position: relative;
     color: #fff;
+    flex-wrap: wrap;
 }
 .section-map-info::before {
     content: "";
